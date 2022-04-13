@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('login')->unique();
             $table->string('password');
             $table->rememberToken();
-            $table->timestamp('last_login')->default(Carbon::now());
+            $table->timestamp('last_login');
             $table->timestamps();
         });
     }
